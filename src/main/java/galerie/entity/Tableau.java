@@ -11,6 +11,9 @@ import lombok.*;
  *
  * @author Benjamin
  */
+@Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
+@Entity
+
 public class Tableau {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

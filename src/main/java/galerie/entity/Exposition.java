@@ -14,6 +14,10 @@ import lombok.*;
  *
  * @author Benjamin
  */
+
+@Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
+@Entity
+
 public class Exposition {
    
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

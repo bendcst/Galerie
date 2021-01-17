@@ -6,15 +6,19 @@
 package galerie.dao;
 
 
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.jdbc.Sql;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 /**
  *
  * @author Benjamin
  */
+@Log4j2 // Génère le 'logger' pour afficher les messages de trace
+@DataJpaTest
 public class ExpositionRepositoryTest {
      @Autowired
     private ExpositionRepository expositionDAO;
